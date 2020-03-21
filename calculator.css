@@ -1,0 +1,114 @@
+body{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: rgb(12, 153, 118);
+}
+
+.header{
+text-align: center;
+font-size: larger;
+padding: 15px 25px;
+color: cornsilk;
+}
+
+
+.form-group{
+display: grid;
+margin: 15px 25px;
+padding: 10px;
+width:70%;
+max-width: 400px;
+color: cornsilk;
+
+}
+
+.input{
+  border-radius: 15px;
+  box-shadow: none; 
+  width:50px;
+  padding: 2px 4px;
+  margin:5px 10px;
+
+}
+
+.button{
+    display:inline-block;
+    position: relative;
+    margin-left:40%;
+	background-color:rgb(60, 134, 100);
+	padding: 8px 16px 8px 16px;
+	border-radius: 10px;
+	border: none;
+	font-size: 15px;
+    color: whitesmoke;
+    position: relative;
+ }
+
+
+.footer{
+text-align: center;
+color:  rgb(195, 221, 46);
+margin: 20px 10px 20px 10px;
+}
+
+.moreinfo{
+color:whitesmoke;
+font-size: medium;
+padding: 5px 15px;
+border-radius: 10px;
+border: 1px solid rgb(195, 221, 46);
+margin: 5px 10px 5px 10px;
+}
+
+.BMIcategories{
+color:whitesmoke solid;
+font-weight: bold;
+}
+
+
+@media screen and (min-width:768px){
+
+/*grid testing*/
+
+    .form-group{
+        display: grid;
+        grid-template-columns: repeat (auto-fit minmax (900px,3 fr));
+        grid-column: 3,7;
+    }
+
+        .input{
+        display:grid;
+         grid-template-columns: repeat (auto-fit minmax (900px,3 fr));
+         
+        }
+        
+        .button{
+        margin-left:10%;
+        }
+        
+        
+    }
+
+@media screen and (min-width:1024px){
+
+    /*grid testing*/
+    
+    .form-group{
+        display:grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-column: 5/6;
+        grid-row: 2/3;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    .button{
+    margin-left:50%;
+    }
+
+    .input{
+        grid-template-columns: repeat (auto-fit minmax (900px,3 fr));
+    }
+
+   

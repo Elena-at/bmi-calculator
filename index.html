@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI calculator</title>
+    <link href="calculator.css" rel="stylesheet">
+    
+    <body>
+        <div class="container">
+                <div class="header"> BMI calculator</div>    
+                <form>
+                    <div class="form-group">
+                        <label>Height (CM):</label>
+                        <input type="number" name="height" class="input">
+                    </div>
+                    <div class="form-group">
+                        <label> Weight (KG)</label>
+                        <input type="number" name="weight" class="input">
+                    </div>
+                    
+                    <div>
+                        <button class="button" id="submit" type="submit">Submit</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label> BMI Result: </label>
+                        <input type="number" name="value" class="input">
+                    </div>
+                </form>
+                
+                <div>
+                    <div class="footer"> [ A healthy BMI ranges between 19 and 25]
+                    </div>
+                    
+                </div>
+            </div>
+
+          <fieldset class="moreinfo">
+           <legend class="BMIcategories">BMI categories</legend>
+        <p>Underweight= lower 18.5 </p>
+        <p>Normal weight= 18.5 - 24.9 </p>
+        <p>Overweight= 25-29.9 </p>
+        <p>Obesity= BMI of 30 or greater </p>
+           </fieldset>
+        </body>
