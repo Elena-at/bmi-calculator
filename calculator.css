@@ -6,132 +6,142 @@ body{
     background-color: rgb(12, 153, 118);
 }
 
+.container{
+    width: 80%;
+    margin: auto;
+}
+
 .header{
-text-align: center;
-font-size: larger;
-padding: 15px 25px;
-color: cornsilk;
+    text-align: center;
+    font-size: larger;
+    padding: 15px 25px;
+    color: cornsilk;
 }
 
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    justify-items: center;
 }
 
 .full{
-grid-column:span 2;
+    grid-column:span 2;
 }
 
-/* .form-group{
-display: grid;
-margin: 15px 25px;
-padding: 10px;
-width:70%;
-max-width: 400px;
-color: cornsilk;
-justify-content: center;
-} */
+.form-group{
+    padding: 10px;
+    color: cornsilk;
+    
+}
 
 .input{
-  border-radius: 15px;
-  box-shadow: none; 
-  width:50px;
-  padding: 2px 4px;
-  margin:5px 10px;
-
-
+    border-radius: 15px;
+    box-shadow: none; 
+    width:50px;
+    padding: 2px 4px;
+    margin:5px 10px;
+    
+    
 }
 
-/* .button{
-    display:inline-block;
-    position: relative;
-    margin-left:40%;
-	background-color:rgb(60, 134, 100);
-	padding: 8px 16px 8px 16px;
-	border-radius: 10px;
-	border: none;
-	font-size: 15px;
+.button{
+    background-color:rgb(60, 134, 100);
+    padding: 4px 8px 4px 8px;
+    border-radius: 10px;
+    border: none;
     color: whitesmoke;
-    position: relative;
- } */
+    width:30%;
+    
+}
 
 
 .footer{
-text-align: center;
-color:  rgb(195, 221, 46);
-margin: 20px 10px 20px 10px;
+    text-align: center;
+    color:  rgb(195, 221, 46);
+    margin: 20px 10px 20px 10px;
 }
 
 .moreinfo{
-color:whitesmoke;
-font-size: medium;
-padding: 5px 15px;
-border-radius: 10px;
-border: 1px solid rgb(195, 221, 46);
-margin: 5px 10px 15px 10px;
+    color:whitesmoke;
+    font-size: medium;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(195, 221, 46);
+    margin-top:40px;
 }
 
 .BMIcategories{
-color:whitesmoke solid;
-font-weight: bold;
+    color:whitesmoke solid;
+    font-weight: bold;
 }
 
 
 /*implementing portrait for mobile*/
 @media screen and (max-width:767px) and (orientation: portrait) {
+    .header{
+        margin-top: 30px;
+    }
+    
+    .container{
+        width: 80%;
+    }
     
     .card {
-
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     
     .full{
-    grid-column: 1;
+        grid-column: 1;
     }
-      
-
+    
+    .footer{
+        font-size: small;
+    }
+    
 }
 
-@media screen and (min-width:768px){
-
-/*grid testing*/
-
-    .card-body{
-        display: grid;
-        grid-template-columns: repeat (auto-fit minmax (900px,3 fr));
-        grid-column: 3;
-        grid-row:3;
+/*implementing media screen for tablet*/
+@media screen and (min-width:768px) {
+ 
+    .header{
+       margin:40px;  
+    }
+    
+    .container{
+        width: 80%;
+        text-align: center;
+    }
+    
+    .footer, .moreinfo, .full, .form-group, .header, .input{
+        font-size:x-large;
+        marf
+    }
+    
+    .card{
+        grid-gap:70px;
     }
 
-        .input{
-        display:grid;
-         grid-template-columns: repeat (auto-fit minmax (900px,3 fr));
-         
-        }
-        
-        .button{
-        margin-left:10%;
-        }
-        
-        
+    .moreinfo{
+        margin-top:160px;
     }
+    
+}
 
+/*implementing media screen for laptop*/
 @media screen and (min-width:1024px){
-
-    /*grid testing*/
     
-    .card-body{
-        display:grid;
-        grid-template-columns: repeat (3, 1fr);
-        grid-row:3;
-       
+    .header{
+        margin-top: 30px;
     }
-   
-    .button{
-    margin-left:50%;
-    }
-
     
-   
+    .container{
+        width: 80%;
+    }
+    
+    
+    
+}
+
