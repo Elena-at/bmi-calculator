@@ -13,8 +13,17 @@ padding: 15px 25px;
 color: cornsilk;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
-.form-group{
+.full{
+grid-column:span 2;
+}
+
+/* .form-group{
 display: grid;
 margin: 15px 25px;
 padding: 10px;
@@ -22,9 +31,7 @@ width:70%;
 max-width: 400px;
 color: cornsilk;
 justify-content: center;
-
-
-}
+} */
 
 .input{
   border-radius: 15px;
@@ -36,7 +43,7 @@ justify-content: center;
 
 }
 
-.button{
+/* .button{
     display:inline-block;
     position: relative;
     margin-left:40%;
@@ -47,7 +54,7 @@ justify-content: center;
 	font-size: 15px;
     color: whitesmoke;
     position: relative;
- }
+ } */
 
 
 .footer{
@@ -70,6 +77,22 @@ color:whitesmoke solid;
 font-weight: bold;
 }
 
+
+/*implementing portrait for mobile*/
+@media screen and (max-width:767px) and (orientation: portrait) {
+    
+    .card {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    
+    .full{
+    grid-column: 1;
+    }
+      
+
+}
 
 @media screen and (min-width:768px){
 
