@@ -7,19 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BMI calculator</title>
     <link href="calculator.css" rel="stylesheet">
-    <script src="./BMIcalculator.js"></script>
+   
 
     <body>
         <div class="container">
             <div class="header"> BMI calculator</div>    
-            <form class="card">
+            <form class="card" action="javascript:getBMIresults()">
                 <div class="form-group">
-                    <label>Height (CM):</label>
-                    <input type="number" name="height" id="cm" class="input">
+                    <label for="height" >Height (CM):</label>
+                    <input type="number" step="0.01" name="height" id="cm" class="input">
                 </div>
+
                 <div class="form-group">
-                    <label> Weight (KG)</label>
-                    <input type="number" name="weight" id="kg" class="input">
+                    <label for="weight">Weight (KG)</label>
+                    <input type="number" step="000.1"name="weight" id="kg" class="input">
                 </div>
                 
              
@@ -47,6 +48,6 @@
                   
             </div>
         </div>
-        
+        <script src="./BMIcalculator.js"></script>
         
     </body>

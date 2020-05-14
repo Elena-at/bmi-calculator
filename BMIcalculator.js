@@ -1,11 +1,25 @@
+const height = 1.71
+// prompt("Insert your height (cm):");
+const weight = 60
+// prompt("Insert your weight (kg)");
+
+const BMI = weight/(height*height);
 
 
-// Get user height and weight
-const height = 1.67
-const weight = 55
+let result = "Your BMI " + BMI;
 
-// Calculate result - > kg/m2
-let result = weight/height**2
+if (BMI < 18.5) {  
+    result = `${result} ${BMI}, You are underweight`;
+} else if (BMI > 18.5 && BMI < 25){
+     result = `${result} ${BMI}, You have a normal weight`;
+} else if (BMI > 25 && BMI < 30){
+    result = `${result} ${BMI}, You are overweight`;
+} else if ( BMI > 30) {
+    result = `${result} ${BMI}, You are obese`;
+}
 
-// Show result
-console.log('result', result)
+
+
+
+
+
